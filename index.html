@@ -80,7 +80,7 @@
               <sup>3</sup>Galbot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <sup>4</sup>Tongji University
 
-              <span class="brmod">submitted to ICRA 2024</span>
+              <span class="brmod">ICRA 2024</span>
             </span>
           </div>
 
@@ -98,7 +98,17 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="#method_video"
+                <a href="https://github.com/user432/gamma"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=SWK463puSp0&ab_channel=NANDIRAJUGIREESH"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -106,6 +116,9 @@
                   <span>Video</span>
                 </a>
               </span>
+
+
+
             </div>
 
           </div>
@@ -131,8 +144,23 @@
 </section> -->
 
 
+
 <section class="section">
   <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+  <div id="method_video" class="columns is-centered has-text-centered">
+    <!-- <div class="column is-two-thirds"> -->
+        <img src="static/images/teaser.png" alt="teaser">
+      </div>
+    </div>
+  </div> 
+</section>
+
+<section class="section">
+    <div class="container">
+  <div class="container">
+
 
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -140,7 +168,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Mobile manipulation constitutes a fundamental task for robotic assistants and garners significant attention within the robotics community. A critical challenge inherent in mobile manipulation is the effective observation of the target while approaching it for grasping. In this work, we propose a graspability-aware mobile manipulation approach powered by an online grasping pose fusion framework that enables a temporally consistent grasping observation. Specifically, the predicted grasping poses are online organized to eliminate the redundant, outlier grasping poses, which can be encoded as a grasping pose observation state for reinforcement learning. Moreover, on-the-fly fusing the grasping poses enables a direct assessment of graspability, encompassing both the quantity and quality of grasping poses. This assessment can subsequently serve as an observe-to-grasp reward, motivating the agent to prioritize actions that yield detailed observations while approaching the target object for grasping. Through extensive experiments conducted on the Habitat and Isaac Gym simulators, we find that our method attains a good balance between observation and manipulation, yielding high performance under various grasping metrics. Furthermore, we discover that the incorporation of temporal information from grasping poses aids in mitigating the sim-to-real gap, leading to robust performance in challenging real-world experiments.
+            We propose a graspability-aware mobile manipulation approach powered by an online grasping pose fusion framework that enables a temporally consistent grasping observation. Specifically, the predicted grasping poses are online organized to eliminate the redundant, outlier grasping poses, which can be encoded as a grasping pose observation state for reinforcement learning. Moreover, on-the-fly fusing the grasping poses enables a direct assessment of graspability, encompassing both the quantity and quality of grasping poses. This assessment can subsequently serve as an observe-to-grasp reward, motivating the agent to prioritize actions that yield detailed observations while approaching the target object for grasping. Through extensive experiments conducted on the Habitat and Isaac Gym simulators, we find that our method attains a good balance between observation and manipulation, yielding high performance under various grasping metrics. Furthermore, we discover that the incorporation of temporal information from grasping poses aids in mitigating the sim-to-real gap, leading to robust performance in challenging real-world experiments.
           </p>
         </div>
       </div>
@@ -149,201 +177,85 @@
   <!--/ Abstract. -->
 
   <!-- Paper video. -->
-  <br/>
-  <br/>
-  <div id="method_video" class="columns is-centered has-text-centered">
-    <div class="column is-two-thirds">
-      <h2 class="title is-2">Project Video</h2>
-      <div class="publication-video">
-        <iframe src="https://www.youtube.com/embed/SWK463puSp0"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
+  <!-- <br/>
+  <br/> -->
+
   <!--/ Paper video. -->
-</section>
 
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center;">Gait Transition via a Velocity-Conditioned Policy</h2>
-        <tr>
-          <td>
-            <br>
-            <div class="columns is-centered has-text-centered">
-              <video autoplay loop muted playsinline src="./resources/gait_transition.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 80%;"></video>
-            </div>
-          </td>
-        </tr>
-      </div> 
-    </div>
 
-    <br><br>
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center;">Similar Energy Consumption Trend<br \>between Our Robot and Horses</h2>
-        
-        <div class="is-vcentered interpolation-panel">
-          <div class="content has-text-centered">
-            <img style="border: 1px solid #bbb; border-radius: 10px; width: 36.75%;" src="./resources/horse.png">&nbsp;&nbsp;&nbsp;&nbsp;<img style="border: 1px solid #bbb; border-radius: 10px; width: 40%;" src="./resources/mpc_energy.png">
-          </div>
-          <div class="content has-text-centered">
-            <p>
-              In Biomechanics, Froude number is a metric characterizing gaits of quadrupeds and bipeds. Animals with a similar morphology but with different sizes tend to use the same gait when moving with equal Froude numbers. Our robot has similar Froude numbers as horses and sheep. The plot on the left <strong>(Hoyt et al. 1981)</strong> analyzes the energy consumption of different horse gaits across different speeds. Shown on the right, the energy consumption plot of our robot has a similar trend, which also validates certain gaits will emerge at certain speeds if we minimize the energy consumption. 
-            </p>
-          </div>
-        </div>
-        <br>
-        <div class="is-vcentered interpolation-panel">
-          <div class="content has-text-centered">
-            <video autoplay loop muted playsinline src="./resources/gait_comparison.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 80%;"></video>
-          </div>
-          <div class="content has-text-centered">
-            <p>
-              Foot Contact Plots of Walking, Trotting, Bouncing (Galloping)
-            </p>
-          </div>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-2">Method</h2>
+
+    <div id="method" class="columns is-centered has-text-centered">
+      <!-- <div class="column is-two-thirds"> -->
+          <img src="static/images/method.png" alt="method">
         </div>
 
       </div>
-    </div>
+    </div> 
+    <p>
+      Our method processes the gripper depth map to region-of-interest point cloud, which then be sent to GSNet for predicting grasping poses. The predicted grasping poses will then be integrated into the so far fused grasping poses. The fused grasping poses will be encoded, along with  visual information and state information for learning graspability policy.
+    </p>
+  </section>
 
 
-    <br><br>
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center;">More Examples of Emergent Structured Gaits <br> (Walk, Trot & Bounce)</h2>
-        <tr>
-          <td>
-            <br><h3 class="title is-4">Walking Gait (0.375 m/s): </h3><br>
-              <div class="columns is-centered has-text-centered">
-                <video autoplay loop muted playsinline src="./resources/walk_trench.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 33%;"></video>
-                &nbsp;
-                <video autoplay loop muted playsinline src="./resources/walk_payload.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 33%;"></video>
-                &nbsp;
-                <video autoplay loop muted playsinline src="./resources/walk_brush.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 33%;"></video>
-              </div>
-          </td>
-        </tr>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-2">Results</h2>
 
-        <tr>
-          <td>
-            <br><h3 class="title is-4">Trotting Gait (0.9 m/s): </h3><br>
-              <div class="columns is-centered has-text-centered">
-                <video autoplay loop muted playsinline src="./resources/trot_trench.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 33%;"></video>
-                &nbsp;
-                <video autoplay loop muted playsinline src="./resources/trot_payload.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 33%;"></video>
-                &nbsp;
-                <video autoplay loop muted playsinline src="./resources/trot_brush.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 33%;"></video>
-              </div>
-          </td>
-        </tr>
+    <div id="grasping_pose_vis" class="columns is-centered has-text-centered">
+      <!-- <div class="column is-two-thirds"> -->
+          <!-- <img src="static/images/grasping_pose_embedding.mp4" alt="grasping_pose_embedding"> -->
+          <video autoplay loop muted playsinline controls src="static/images/grasping_pose_embedding.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 60%;"></video>
 
-        <tr>
-          <td>
-            <br><h3 class="title is-4">Bouncing (Galloping) Gait (1.5 m/s): </h3><br>
-              <div class="columns is-centered has-text-centered">
-                <video autoplay loop muted playsinline src="./resources/bounce_pull.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 50%;"></video>
-                &nbsp;
-                <video autoplay loop muted playsinline src="./resources/bounce_pull_slomo.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 50%;"></video>
-              </div>
-              <br />
-              <div class="columns is-centered has-text-centered">
-                <video autoplay loop muted playsinline src="./resources/bounce_slomo.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 50%;"></video>
-                &nbsp;
-                <video autoplay loop muted playsinline src="./resources/bounce_trench.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 50%;"></video>
-              </div>
-          </td>
-        </tr>
 
-        <br/>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center;">Emergent Unstructured Gaits</h2>
-        <tr>
-          <td>
-            <br>
-              <div class="columns is-centered has-text-centered v-divider">
-                <video autoplay loop muted playsinline src="./resources/rocky.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 50%;"></video>
-                &nbsp;
-                <video autoplay loop muted playsinline src="./resources/plank.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 50%;"></video>
-              </div>
-              <br />              
-              <div class="columns is-centered has-text-centered v-divider">
-                <video autoplay loop muted playsinline src="./resources/unstructured-indoor-1.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 50%;"></video>
-                &nbsp;
-                <video autoplay loop muted playsinline src="./resources/unstructured-indoor-2.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 50%;"></video>
-              </div>
-          </td>
-        </tr>
-      </div> 
-    </div>
 
-    <br><br>
-  </div>
-</section> -->
-
-<!-- <section class="section">
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <div class="is-vcentered interpolation-panel">
-        <h2 class="title is-2" style="text-align: center;">Related Work</h2>
-        <div class="content is-centered has-text-centered">
-          This work is part of our series of research on learning based control of legged robots. Please check out other works below. 
         </div>
-        <br><br>
-        <div class="container">
-          <div class="subtitle is-centered">
-            <table width="100%">
-              <tr>
-                <td width="100%">
-                <div style="float:left;margin-right:30px;margin-left:30px;">
-                <video autoplay loop muted src="resources/rma-clip.mp4" width="400"></video>
+
+      </div>
+    </div> 
+    <p>
+      Visualization of the quality of the fused grasping poses during mobile manipulation. The grasping are color-coded based on their graspability feature (to red the better).
+    </p>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <!-- <h2 class="title is-2">Results</h2> -->
+
+          <tr>
+            <td>
+              <br><h3 class="title is-4">Real-world Grasping </h3><br>
+                <div class="columns is-centered has-text-centered">
+                  <video autoplay loop muted playsinline controls src="static/images/exp_1.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 50%;"></video>
+                  &nbsp;
+                  <video autoplay loop muted playsinline controls src="static/images/exp_2.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 50%;"></video>
+                  &nbsp;
                 </div>
-                RMA: Rapid Motor Adaptation for Legged Robots <br/>
-                Ashish Kumar, Zipeng Fu, Deepak Pathak, Jitendra Malik <br/>
-                RSS 2021 <br/> <br/> <br/> 
-                <a href="https://ashish-kmr.github.io/rma-legged-robots/rma-locomotion-final.pdf">PDF</a> | 
-                <a href="https://www.youtube.com/watch?v=nBy1piJrq1A">Video</a> |
-                <a href="https://ashish-kmr.github.io/rma-legged-robots/">Project Page</a> 
-              </tr>
-            </table>
-          </div>
-          <div class="subtitle is-centered">
-            <table width="100%">
-              <tr>
-                <td width="100%">
-                  <div style="float:left;margin-right:30px;margin-left:30px;">
-                  <video autoplay loop muted src="resources/nav-clip.mp4" width="400"></video>
-                  </div>
-                  Coupling Vision and Proprioception for Navigation of Legged Robots <br/>
-                  Zipeng Fu*, Ashish Kumar*, Ananye Agarwal, Haozhi Qi, Jitendra Malik, Deepak Pathak <br/>
-                  CVPR 2022 <br/> <br/> <br/>
-                  <a href="https://navigation-locomotion.github.io/camera-ready/resources/navigation-locomotion.pdf">PDF</a> | 
-                  <a href="https://www.youtube.com/watch?v=sZVvutQUAQ4">Video</a> |
-                  <a href="https://navigation-locomotion.github.io/">Project Page</a> 
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
+            </td>
+          </tr>
+  </section>
+
+
 
 
 <section class="section" id="BibTeX">
   <div class="container content">
     <h2 class="titile">BibTeX</h2>
-    <pre><code>@inproceedings{,
-  author    = {},
-  title     = {GAMMA: Graspability-Aware Mobile MAnipulation Policy Learning based on Online Grasping Pose Fusion},
-  booktitle   = {},
-  year      = {2023},
-}</code></pre>
+    <pre><code>@article{zhang2023gamma,
+      title={GAMMA: Graspability-Aware Mobile MAnipulation Policy Learning based on Online Grasping Pose Fusion},
+      author={Zhang, Jiazhao and Gireesh, Nandiraju and Wang, Jilong and Fang, Xiaomeng and Xu, Chaoyi and Chen, Weiguang and Dai, Liu and Wang, He},
+      journal={arXiv preprint arXiv:2309.15459},
+      year={2023}
+    }</code></pre>
   </div>
 </section>
 
@@ -354,9 +266,9 @@
       <a href="https://browse.arxiv.org/pdf/2309.15459.pdf" class="large-font bottom_buttons">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <!-- <a class="large-font bottom_buttons" disabled>
+      <a class="large-font bottom_buttons" disabled>
         <i class="fab fa-github"></i>
-      </a> -->
+      </a> 
       <br />
       <p>Page template borrowed from <a href="https://worldsheet.github.io/"><span class="dnerf">Worldsheet</span></a> and <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a>.</p>
     </div>
